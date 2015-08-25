@@ -77,9 +77,6 @@ Use the steps in this section to test and debug the app.
 5.	The app page will show at the Excel right pane, choose “Products”, then, click “Connect”.
 6.	The data will load in the Excel sheet, we can delete, compare and save data by the buttons in our app.
 
-
-For information about installing the Visual Studio solution and deploying the sample app, please see the companion article [How to: Create a complex provider-hosted app that uses the SAP Gateway](https://msdn.microsoft.com/EN-US/library/dn947478.aspx).
-
 ## Copyright ##
 
 Copyright (c) Microsoft. All rights reserved.

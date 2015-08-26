@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\ODSampleDataManifest.xml
+\\modcfs01\ECO\Users\qinzen\packages\Excel OData Connector\Excel OData Connector\ODSampleData\bin\Debug\ODSampleData.debugapp

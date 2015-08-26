@@ -1,0 +1,7 @@
+False
+76dcd0d9-aa7f-4826-8881-c002a8b27add4a1a6ca0-5b99-4fd9-8213-ec7ca59a60a9
+{e8d6c6b9-fa9b-4b6e-8ace-979eec254e49}{d91218ff-4c43-4623-b0ad-6fd477399d5f}
+{5ba2911d-c0a0-4398-ba44-7fcccdf13bc8}
+1.0.0.0
+ODSampleData
+_layouts/15/

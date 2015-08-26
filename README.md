@@ -58,10 +58,11 @@ The following procedures can help you to use your own data source.
 1.	Unzip the sample and open the *.sln file in Visual Studio.
 2.	Open the web.config file in the ODSampleDataWeb project and change the '<add key="ida:ODataEndpointURL" value=" " />, Set the value of your data source url.'
 In our sample: 
-  <add key="ida:ODataEndpointURL"  
+ ```
+<add key="ida:ODataEndpointURL"  
 value="http://services.odata.org/V3/(S(omlwdrfviuvthgrncrmyko1m))/OData/OData.svc/" />
 <add key="ida:ODataMetadataURL"     value="http://services.odata.org/V3/(S(omlwdrfviuvthgrncrmyko1m))/OData/OData.svc/$metadata" />
-
+```
  The first value is the data source location, the second one is the data format.
  
  You can use your own data by replace the values here.

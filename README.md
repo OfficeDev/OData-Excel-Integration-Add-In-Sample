@@ -55,8 +55,9 @@ The Visual Studio solution contains the following:
 
 # Modify the sample for your needs
 The following procedures can help you to use your own data source.
-1.	Unzip the sample and open the *.sln file in Visual Studio.
-2.	Open the web.config file in the ODSampleDataWeb project and change the '<add key="ida:ODataEndpointURL" value=" " />, Set the value of your data source url.'
+1.	 Unzip the sample and open the *.sln file in Visual Studio.
+2.	 Open the web.config file in the ODSampleDataWeb project and change the '<add key="ida:ODataEndpointURL" value=" " />, 
+3.	 Set the value of your data source url.'
 In our sample: 
  ```
 <add key="ida:ODataEndpointURL"  

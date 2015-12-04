@@ -8,10 +8,7 @@ This sample is an app for Office that reads and writes OData data to documents i
 [Modify the Sample for your needs](#ModifySample)<BR>
  
 <a name="DeployTheSampleApp"></a>
-#Deploy the sample App
-
 Use the steps in this section to test and debug the app.
-
 1.	Open the sample and open the ExcelODataInterface.sln file in Visual Studio.
 2.	Click Start or press F5 in Visual Studio.
 3.	The first time that you use F5, you are prompted to grant permissions to the app. Click Trust It.
@@ -23,26 +20,23 @@ Use the steps in this section to test and debug the app.
 #Key components of the sample
 The Visual Studio solution contains the following:
 - ODSampleData project, which contains the app's manifest configured to support hosting the app in Excel 2013, Excel Online.
-- ODSampleData Web project, which contains:
- -- Home.aspx, The main page of the app 
-- ODataHelper.cs, A C# file to consume and update data using the OData. Which contains: 
- -- Parsing metadata from OData 
- -- Getting data form OData 
- -- Updating data to Odata 
-- DataHelper.ts, A TypeScript file is implemented based on Javascript API for Office. It runs on the client side and contains:
- -- Data methods which are designed to interact with Excel data
- -- Format methods which can set data format
- -- Navigation Methods
- -- Error handler methods
-- Diff.ts,  A TypeScript file for solving differences
-- UX.ts, UXHelpers.ts, UX.BulgingDiffPage.ts, UX.DiffPage, UXList.ts   for UI element and data object
-
+- ODSampleData Web project, which contains the following components:
+   home.aspx   The main page of the app
+   ODataHelper.cs   A C# file to consume and update data using the OData. It contains the following parts: 
+     Parsing metadata from OData
+     Getting data form OData 
+     Updating data to Odata 
+- DataHelper.ts   A TypeScript file is implemented based on Javascript API for Office. It’s running on client side.  It contains the following parts:
+   Data methods which are designed to interact with Excel data
+   Format methods which can set data format
+   Navigation Methods
+   Error handler methods
+- Diff.ts  A TypeScript file for solving differences
+- UX.ts , UXHelpers.ts, UX.BulgingDiffPage.ts, UX.DiffPage, UXList.ts   for UI element and data object
 
 <a name="ModifySample"></a>
 # Modify the sample for your needs
-
 The following procedures can help you to use your own data source.
-
 1.	 Unzip the sample and open the *.sln file in Visual Studio.
 2.	 Open the web.config file in the ODSampleDataWeb project and change the '<add key="ida:ODataEndpointURL" value=" " />' 
 3.	 Set the value of your data source url.
@@ -53,7 +47,7 @@ In our sample:
 value="http://services.odata.org/V3/(S(omlwdrfviuvthgrncrmyko1m))/OData/OData.svc/" />
 <add key="ida:ODataMetadataURL"     value="http://services.odata.org/V3/(S(omlwdrfviuvthgrncrmyko1m))/OData/OData.svc/$metadata" />
 ```
-The first value is the data source location, the second one is the data format.
+ The first value is the data source location, the second one is the data format.
  
 You can use your own data by replace the values here.
 
@@ -62,7 +56,6 @@ You can use your own data by replace the values here.
  
 See [How to: Create your first task pane or content app with Visual Studio] (http://msdn.microsoft.com/en-us/library/office/fp142161(v=office.15).aspx)
 General work flow
-
 1.	Office 'Add-In' requests available data feeds from OData via OData Helper on Azure
 2.	OData Helper on Azure parses the metadata and send the table information to the Office 'Add-In'. UI Helper will render the data feeds.
 3.	User choose a table and its columns to connect

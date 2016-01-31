@@ -1,8 +1,5 @@
 var ODSampleData;
 (function (ODSampleData) {
-    ODSampleData.dataFeedManager;
-    ODSampleData.hostType;
-    ODSampleData.config;
     function onDocumentReady() {
         $.getJSON("../config.json", { DataFeedDefaultHeaders: [] }, function (config) {
             ODSampleData.config = config;

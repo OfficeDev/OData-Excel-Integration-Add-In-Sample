@@ -1,8 +1,7 @@
-var __extends = this.__extends || function (d, b) {
+var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
-    __.prototype = b.prototype;
-    d.prototype = new __();
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var ODSampleData;
 (function (ODSampleData) {
@@ -160,7 +159,8 @@ var ODSampleData;
                     return undefined;
                 }
                 var rowId = this.RowIdInExcel;
-                var format = [{ cells: { row: rowId }, format: { backgroundColor: "#FFFACD" } }];
+                var format = [];
+                format.push({ cells: { row: rowId }, format: { backgroundColor: "#FFFACD" } });
                 this.DataFeed.Headers.forEach(function (header, index) {
                     var cell = _this.rowDiffTable[header];
                     if (cell) {

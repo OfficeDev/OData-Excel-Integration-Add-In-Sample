@@ -149,7 +149,8 @@
             }
 
             var rowId = this.RowIdInExcel;
-            var format = [{ cells: { row: rowId }, format: { backgroundColor: "#FFFACD" } }];
+            var format = [];
+            format.push({ cells: { row: rowId }, format: { backgroundColor: "#FFFACD" } });
 
             this.DataFeed.Headers.forEach((header, index) => {
                 var cell = this.rowDiffTable[header];

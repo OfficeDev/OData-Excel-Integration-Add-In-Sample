@@ -1,27 +1,79 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
-  <Id>e57a32a9-958a-4579-809f-df1a11a64752</Id>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>e57a32a9-958a-4579-809f-df1a11a64751</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Microsoft</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="OData Integration" />
   <Description DefaultValue="OData Integration"/>
   <IconUrl DefaultValue="https://localhost:44330/Images/OData_Icon_32.png" />
-  <!--The HighResolutionIcon element is commented because it is valid only for 1.1 (or above) versions of the manifest.
-      To use this property, convert this manifest to version 1.1 by adding an API set in the Activation tab of the manifest editor.-->
-  <!--<HighResolutionIconUrl DefaultValue="https://localhost:44330/Images/OData_Icon_64.png" />-->
+  <HighResolutionIconUrl DefaultValue="https://localhost:44330/Images/OData_Icon_64.png" />
   <AppDomains>
     <AppDomain>https://localhost:44330/</AppDomain>
     <AppDomain>http://localhost:48757/</AppDomain>
     <AppDomain>https://login.windows.net</AppDomain>
     <AppDomain>https://login.microsoftonline.com</AppDomain>
   </AppDomains>
-  <Capabilities>
-    <Capability Name="Workbook" />
-  </Capabilities>
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
   <DefaultSettings>
     <SourceLocation DefaultValue="https://localhost:44330/Pages/Home.aspx" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="VersionOverridesV1_0">
+    <Description resid="residToolTip" />
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabData">
+              <Group id="ExcelOData.Group1">
+                <Label resid="residLabelGroup" />
+                <Icon>
+                  <bt:Image size="16" resid="icon1_16x16" />
+                  <bt:Image size="32" resid="icon1_32x32" />
+                  <bt:Image size="80" resid="icon1_80x80" />
+                </Icon>
+                <Control xsi:type="Button" id="ExcelOData.Button1">
+                  <Label resid="residLabelButton" />
+                  <Supertip>
+                    <Title resid="residLabelButton" />
+                    <Description resid="residToolTip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="icon1_16x16" />
+                    <bt:Image size="32" resid="icon1_32x32" />
+                    <bt:Image size="80" resid="icon1_80x80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="residTaskPaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="icon1_16x16" DefaultValue="https://localhost:44330/Images/icon16x16.png"/>
+        <bt:Image id="icon1_32x32" DefaultValue="https://localhost:44330/Images/icon32x32.png"/>
+        <bt:Image id="icon1_80x80" DefaultValue="https://localhost:44330/Images/icon80x80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="residTaskPaneUrl" DefaultValue="https://localhost:44330/Pages/Home.aspx"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="residLabelGroup" DefaultValue="OData"/>
+        <bt:String id="residLabelButton" DefaultValue="Retrieve Data"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="residToolTip" DefaultValue="Pull data from an OData source, change it, and compare/save your updates."/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
 </OfficeApp>

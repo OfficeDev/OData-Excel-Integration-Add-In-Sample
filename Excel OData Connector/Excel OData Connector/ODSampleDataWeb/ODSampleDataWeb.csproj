@@ -100,6 +100,9 @@
     <Content Include="Images\Compare_different_button_icon_disabled.png" />
     <Content Include="Images\Extend_button_icon_default.png" />
     <Content Include="Images\Extend_button_icon_disabled.png" />
+    <Content Include="Images\icon16x16.png" />
+    <Content Include="Images\icon32x32.png" />
+    <Content Include="Images\icon80x80.png" />
     <Content Include="Images\OData_Icon_32.png" />
     <Content Include="Images\OData_Icon_64.png" />
     <Content Include="Images\odata_logo.png" />

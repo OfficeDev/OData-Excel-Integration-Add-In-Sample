@@ -9,6 +9,7 @@ This sample is an app for Office that reads and writes OData data to documents i
  
 <a name="DeployTheSampleApp"></a>
 Use the steps in this section to test and debug the app.
+
 1.	Open the sample and open the ExcelODataInterface.sln file in Visual Studio.
 2.	Click Start or press F5 in Visual Studio.
 3.	The first time that you use F5, you are prompted to grant permissions to the app. Click Trust It.
@@ -37,9 +38,9 @@ The Visual Studio solution contains the following:
 <a name="ModifySample"></a>
 # Modify the sample for your needs
 The following procedures can help you to use your own data source.
-1.	 Unzip the sample and open the *.sln file in Visual Studio.
-2.	 Open the web.config file in the ODSampleDataWeb project and change the '<add key="ida:ODataEndpointURL" value=" " />' 
-3.	 Set the value of your data source url.
+
+1.	Open the web.config file in the ODSampleDataWeb project and change the '<add key="ida:ODataEndpointURL" value=" " />' 
+2.	 Set the value of your data source url.
 
 In our sample: 
  ```
@@ -56,6 +57,7 @@ You can use your own data by replace the values here.
  
 See [How to: Create your first task pane or content app with Visual Studio] (http://msdn.microsoft.com/en-us/library/office/fp142161(v=office.15).aspx)
 General work flow
+
 1.	Office 'Add-In' requests available data feeds from OData via OData Helper on Azure
 2.	OData Helper on Azure parses the metadata and send the table information to the Office 'Add-In'. UI Helper will render the data feeds.
 3.	User choose a table and its columns to connect

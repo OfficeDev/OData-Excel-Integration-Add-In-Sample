@@ -20,6 +20,8 @@
     <CspkgPartId>{43bd0f28-461d-4020-aea3-9192a9622c93}</CspkgPartId>
     <SqlPackagePartId>{b27f45fb-4479-4ab8-be04-33a5967279c6}</SqlPackagePartId>
     <ProjectMode>OfficeApp</ProjectMode>
+    <MinimumOfficeToolsVersion>12.1</MinimumOfficeToolsVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

@@ -21,13 +21,14 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
-    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -99,6 +100,9 @@
     <Content Include="Images\Compare_different_button_icon_disabled.png" />
     <Content Include="Images\Extend_button_icon_default.png" />
     <Content Include="Images\Extend_button_icon_disabled.png" />
+    <Content Include="Images\icon16x16.png" />
+    <Content Include="Images\icon32x32.png" />
+    <Content Include="Images\icon80x80.png" />
     <Content Include="Images\OData_Icon_32.png" />
     <Content Include="Images\OData_Icon_64.png" />
     <Content Include="Images\odata_logo.png" />

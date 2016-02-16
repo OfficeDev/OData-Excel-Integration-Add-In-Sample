@@ -174,7 +174,7 @@ namespace ODSampleDataWeb.Utilities
                         xmlDoc.LoadXml(line);
                         error += xmlDoc.InnerText + Environment.NewLine;
                     }
-                    catch(Exception e)
+                    catch(Exception)
                     {
 
                     }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="ODSampleData"
-     ProductID="{2c82c28e-6da9-480e-a9c4-51cb2d6112ac}"
+     ProductID="{d439d796-42a8-4165-8d33-45fd333640d9}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >

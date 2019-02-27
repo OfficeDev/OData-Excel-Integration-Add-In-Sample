@@ -1,3 +1,18 @@
+---
+topic: sample
+products:
+- Office 365
+- Excel
+languages:
+- TypeScript
+- C#
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  - Azure AD
+  createdDate: 8/25/2015 7:34:03 AM
+---
 ﻿# OData-Excel-Integration-App-Sample
 This sample is an app for Office that reads and writes OData data to documents in an Office host application, such as Excel. This article provides sample code and procedures that show you how to design an app for office. The languages used are C# and TypeScript. The tools used to setup the sample are Visual Studio and the Azure Portal.
 

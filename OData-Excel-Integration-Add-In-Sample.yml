@@ -1,0 +1,21 @@
+### YamlMime:Sample
+sample:
+- name: 'Office Add-in: OData-Excel Integration'
+  path: ''
+  description: This sample is an app for Office that reads and writes OData data to documents in an Office host application, such as Excel. This article provides sample code and procedures that show you how to design an app for office.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  azureDeploy: ''
+  author: rapraj
+  platforms: []
+  languages:
+  - C#
+  - TypeScript
+  extensions:
+    products:
+    - Office 365
+    - Excel
+    scenarios: []

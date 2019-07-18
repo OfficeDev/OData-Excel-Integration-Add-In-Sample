@@ -1,11 +1,11 @@
 ---
 topic: sample
 products:
-- Office 365
-- Excel
+- office-365
+- office-excel
 languages:
-- TypeScript
-- C#
+- typescript
+- csharp
 extensions:
   contentType: samples
   technologies:

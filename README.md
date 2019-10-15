@@ -12,8 +12,11 @@ extensions:
   - Add-ins
   - Azure AD
   createdDate: 8/25/2015 7:34:03 AM
+description: "This sample is an app for Office that reads and writes OData data to documents in an Office host application, such as Excel."
 ---
-﻿# OData-Excel-Integration-App-Sample
+
+# OData-Excel-Integration-App-Sample
+
 This sample is an app for Office that reads and writes OData data to documents in an Office host application, such as Excel. This article provides sample code and procedures that show you how to design an app for office. The languages used are C# and TypeScript. The tools used to setup the sample are Visual Studio and the Azure Portal.
 
 **Table of contents:**
@@ -51,7 +54,7 @@ The Visual Studio solution contains the following:
 - UX.ts , UXHelpers.ts, UX.BulgingDiffPage.ts, UX.DiffPage, UXList.ts   for UI element and data object
 
 <a name="ModifySample"></a>
-# Modify the sample for your needs
+## Modify the sample for your needs
 The following procedures can help you to use your own data source.
 
 1.	Open the web.config file in the ODSampleDataWeb project and change the '<add key="ida:ODataEndpointURL" value=" " />' 
@@ -68,7 +71,7 @@ value="http://services.odata.org/V3/(S(omlwdrfviuvthgrncrmyko1m))/OData/OData.sv
 You can use your own data by replace the values here.
 
 
-# Please follow these instructions to create a Excel Add-In of your own:
+## Please follow these instructions to create a Excel Add-In of your own:
  
 See [How to: Create your first task pane or content app with Visual Studio] (http://msdn.microsoft.com/en-us/library/office/fp142161(v=office.15).aspx)
 General work flow
@@ -81,7 +84,7 @@ General work flow
 6.	Excel Helper will read data from Excel. Diff Helper will analyze the changed and then send updated records to OData Helper on Azure
 7.	OData Helper on Azure make batched OData call with JSON payload and send to OData
 
-## Copyright ##
+## Copyright
 
 Copyright (c) Microsoft. All rights reserved.
 

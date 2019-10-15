@@ -36,7 +36,8 @@ Use the steps in this section to test and debug the app.
 6.	The data will load in the Excel sheet, we can delete, compare and save data by the buttons in our app.
  
 <a name="KeyComponents"></a>
-#Key components of the sample
+## Key components of the sample
+
 The Visual Studio solution contains the following:
 - ODSampleData project, which contains the app's manifest configured to support hosting the app in Excel 2013, Excel Online.
 - ODSampleData Web project, which contains the following components:
